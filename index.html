@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Geovane Cosmo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+    <div id="spotlight"></div>
+
+    <div class="app-container">
+
+        <nav>
+            <div class="nav-logo">Geovane_</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">01. Sobre</a></li>
+                <li><a href="#formacao">02. Formação</a></li>
+                <li><a href="#portfolio">03. Projetos</a></li>
+                <li><a href="#contato">04. Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="sobre" class="section reveal">
+                <p class="hero-subtitle">Olá, mundo! Eu sou o</p>
+                <h1 class="hero-title">
+                    Geovane Cosmo
+                    <span>Desenvolvedor.</span>
+                </h1>
+                <div class="hero-desc">
+                    <p>Tenho 22 anos, morador de Araraquara - SP e apaixonado pela tecnologia. Acredito que a tecnologia tem o poder de mudar o mundo e as pessoas, e quero fazer parte dessa mudança. Atualmente, busco uma oportunidade de estágio enquanto me especializo em Java e no desenvolvimento Frontend.</p>
+                </div>
+            </section>
+
+            <section id="formacao" class="section reveal">
+                <h2 class="section-title">Minha Trajetória</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">Idiomas</span>
+                        <div class="timeline-content">
+                            <h3>Inglês - Intermediário</h3>
+                            <p>Capacidade de leitura técnica, compreensão de documentações e comunicação funcional para o ambiente de desenvolvimento.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">2024 - Presente</span>
+                        <div class="timeline-content">
+                            <h3>Ciência da Computação (4º Período)</h3>
+                            <p>Foco em engenharia de software, estruturas de dados e lógica de programação avançada.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">Especialização Tech</span>
+                        <div class="timeline-content">
+                            <h3>Desenvolvimento Java & Web</h3>
+                            <p>Estudo contínuo focado na criação de aplicações robustas com Java e interfaces modernas com HTML5, CSS3 e JavaScript puro.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section reveal">
+                <h2 class="section-title">Alguns Projetos</h2>
+                <div class="grid-3d">
+                    <div class="card-3d">
+                        <div class="card-content">
+                            <span class="card-tag">Frontend / Vanilla JS</span>
+                            <h3>Interações Imersivas</h3>
+                            <p>Desenvolvimento de interfaces dinâmicas utilizando manipulação de DOM e técnicas de Glassmorphism.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-3d">
+                        <div class="card-content">
+                            <span class="card-tag">Java / Backend</span>
+                            <h3>Sistemas Estruturados</h3>
+                            <p>Aplicações construídas com Java, aplicando conceitos de POO e padrões de projeto.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-3d">
+                        <div class="card-content">
+                            <span class="card-tag">CSS3 Avançado</span>
+                            <h3>Interfaces Responsivas</h3>
+                            <p>Design focado na experiência do usuário e adaptabilidade para múltiplos dispositivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="section reveal">
+                <h2 class="section-title">Contato</h2>
+                <p style="color: var(--text-dim); margin-top: -30px; margin-bottom: 40px; font-family: var(--font-mono);">>> Contato profissional: Geovane Cosmo Do Nascimento.</p>
+                <div class="form-wrapper">
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="nome" required autocomplete="off">
+                            <label for="nome">Nome Completo</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required autocomplete="off">
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="mensagem" rows="4" required></textarea>
+                            <label for="mensagem">Sua Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <div id="alertBox" class="alert-box">Mensagem enviada!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
